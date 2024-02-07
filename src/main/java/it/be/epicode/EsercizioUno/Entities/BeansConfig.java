@@ -73,6 +73,7 @@ return new Pizza("PizzaMargherita",toppings);
     }
 
     @Bean(name = "coca-Cola")
+    @Primary
     Drink cocaCola(){
     return new Drink("Coca-Cola",2,30);
     }
@@ -86,6 +87,7 @@ return new Pizza("PizzaMargherita",toppings);
     }
 //    @Bean(name = "ordineAlTavolo")
 //    Menu menu1 () {
+
 //    List<Pizza> pizzas = new ArrayList<>();
 //    List<Drink> drinks = new ArrayList<>();
 //
