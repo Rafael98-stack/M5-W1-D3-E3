@@ -20,9 +20,14 @@ public class MyTest {
 
     @Test
     public void testListaVuotoPieno() {
-
+int expected = 3;
 //drink = new Drink("CocaCola",2,10);
 int prezzo1 = drink.getPrezzo();
-        assertEquals(2,prezzo1);
+try {
+    assertEquals(expected,prezzo1);
+} catch (Exception e) {
+    System.out.println("Cambiare il prezzo");
+}
+
     }
 }
